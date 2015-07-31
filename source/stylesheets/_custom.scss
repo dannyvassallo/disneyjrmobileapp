@@ -1,0 +1,44 @@
+body{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/radiodisneyapp/triangular.png');
+  background-repeat: repeat;
+}
+.wrap{
+  max-width:640px;
+  margin: 50px auto;
+  text-align: center;
+}
+i{
+  color: #fff;
+  font-size: 250px;
+}
+
+#error{
+  width: 640px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 75px;
+}
+img#disney{
+  padding: 50px 0 10px 0;
+}
+
+@font-face {
+  font-family: 'PlacardMT-BoldCondensed';
+  src: url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.eot?") format("eot"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.woff") format("woff"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.ttf") format("truetype"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.svg#PlacardMT-BoldCondensed") format("svg"); }
+h1{
+  font-family: 'PlacardMT-BoldCondensed';
+  text-transform: uppercase;
+}
+#logowrap{
+  width: 640px;
+  height: 87px;
+  padding: 0 0 100px 0;
+}
+.apple{
+  width: 50%;
+  float: left;
+}
+.google{
+  width: 50%;
+  float: right;
+}
