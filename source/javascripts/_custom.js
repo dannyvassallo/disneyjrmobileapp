@@ -22,24 +22,16 @@
 // Clicks
 $(function(){
   $('.google a').on('click', function(){
-    var axel = Math.random() + "";
-    var a = axel * 10000000000000;
-    var script = document.createElement('script');
-    var img = new image(1,1);
-    script.src = 'https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?';
-    img.src = "https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=1?";            
-    document.documentElement.firstChild.appendChild(script);
-    document.documentElement.firstChild.appendChild(img);    
+        // console.log('google');
+        var axel = Math.random() + '';
+        var a = axel * 10000000000000;
+        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');  
   });
 
   $('.apple a').on('click', function(){
-    var axel = Math.random() + "";
-    var a = axel * 10000000000000;
-    var script = document.createElement('script');
-    var img = new image(1,1);
-    script.src = 'https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?';
-    img.src = "https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=1?";            
-    document.documentElement.firstChild.appendChild(script);
-    document.documentElement.firstChild.appendChild(img);    
+        // console.log('apple');
+        var axel = Math.random() + '';
+        var a = axel * 10000000000000;
+        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
   });
 });
