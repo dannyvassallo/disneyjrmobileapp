@@ -1,25 +1,15 @@
+$red: #bc273a;
+
+html,body {
+  // height:100%;
+  overflow-x: hidden;
+}
 body{
-  background-image: url('https://s3.amazonaws.com/myfangate.com/radiodisneyapp/triangular.png');
+  background-image: url('https://s3.amazonaws.com/myfangate.com/radiodisneyapp/Purple-Background.jpg');
   background-repeat: repeat;
 }
-.wrap{
-  max-width:640px;
-  margin: 50px auto;
-  text-align: center;
-}
-i{
-  color: #fff;
-  font-size: 250px;
-}
-
-#error{
-  width: 640px;
-  font-size: 20px;
-  background-color: #fff;
-  border-radius: 75px;
-}
-img#disney{
-  padding: 50px 0 10px 0;
+.full-w{
+  width: 100%;
 }
 
 @font-face {
@@ -29,16 +19,84 @@ h1{
   font-family: 'PlacardMT-BoldCondensed';
   text-transform: uppercase;
 }
-#logowrap{
-  width: 640px;
-  height: 87px;
-  padding: 0 0 100px 0;
+
+.apple, .google{
+  a{
+    display: block;
+    height: 100%;
+  }
 }
-.apple{
-  width: 50%;
-  float: left;
+
+.wrap{
+  max-width: 800px;
+  background-color: white;
+  padding: 50px 0;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-.google{
-  width: 50%;
-  float: right;
+
+#skew{
+  background: $red;
+  width:100%;
+  height:150px;
+  margin-top: 20px;
+  margin-bottom: -80px;  
+    -webkit-transform: skewY(-5.5deg); 
+   -moz-transform: skewY(3deg); 
+    -ms-transform: skewY(3deg); 
+     -o-transform: skewY(3deg); 
+        transform: skewY(3deg); 
 }
+
+#red-wrap{
+  background-color: $red;
+  height: 60%;
+}
+
+#iphone-right, #iphone-left{
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+#iphone-right{
+  right: -200px;
+}
+#iphone-left{
+  left: -200px;
+}
+
+// @media (min-width: 767px){
+//   #iphone-right, #iphone-left{
+//     img{
+//       width: 100px;
+//     }
+//   } 
+// }
+
+
+@media (max-width:1825px){
+  #iphone-right, #iphone-left{    
+    width: 580px;
+  }   
+}
+
+@media (max-width:1450px){
+  #iphone-right, #iphone-left{    
+    width: 475px;
+    top: 100px
+  }   
+}
+
+// @media (max-width:1199px){
+//   #iphone-right, #iphone-left{    
+//     width: 580px;
+//     top: 250px
+//   }
+//   #iphone-right{
+//     right: -300px;
+//   }
+//   #iphone-left{
+//     left: -300px;
+//   }     
+// }

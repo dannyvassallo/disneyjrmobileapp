@@ -35,3 +35,18 @@ $(function(){
         $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
   });
 });
+
+function resizeRed(){
+  var bodyH = $(window).height();    
+  var diff = bodyH/2;
+  var redW = $('#red-wrap');
+  redW.css('height',diff);
+}
+
+$(function(){
+  resizeRed();
+});
+
+$(window).resize(function(){
+  resizeRed();
+});
