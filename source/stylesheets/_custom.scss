@@ -14,7 +14,11 @@ body{
 
 @font-face {
   font-family: 'PlacardMT-BoldCondensed';
-  src: url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.eot?") format("eot"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.woff") format("woff"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.ttf") format("truetype"), url("https://s3.amazonaws.com/myfangate.com/rdpuzzle/fonts/PlacardMT-BoldCondensed.svg#PlacardMT-BoldCondensed") format("svg"); }
+  src: url('../fonts/PlacardMT-BoldCondensed.eot?') format('eot'),
+       url('../fonts/PlacardMT-BoldCondensed.woff') format('woff'),
+       url('../fonts/PlacardMT-BoldCondensed.ttf')  format('truetype'),
+       url('../fonts/PlacardMT-BoldCondensed.svg#PlacardMT-BoldCondensed') format('svg');
+}
 h1{
   font-family: 'PlacardMT-BoldCondensed';
   text-transform: uppercase;
