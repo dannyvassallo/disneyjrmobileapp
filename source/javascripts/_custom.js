@@ -25,14 +25,14 @@ $(function(){
         // console.log('google');
         var axel = Math.random() + '';
         var a = axel * 10000000000000;
-        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');  
+        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:o9yxn1kf&fmt=3"/>');  
   });
 
   $('.apple a').on('click', function(){
         // console.log('apple');
         var axel = Math.random() + '';
         var a = axel * 10000000000000;
-        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:zlthlnwh&fmt=3"/>');
   });
 });
 
