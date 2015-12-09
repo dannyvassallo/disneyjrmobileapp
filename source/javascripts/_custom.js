@@ -1,3 +1,5 @@
+var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorules.pdf'
+
 //Detection Script//
   var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
   var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
@@ -9,6 +11,8 @@
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1h4tYaU");
+    } else if(windowLocation == '/rules'){
+      window.location.replace(currentRulesLink);
     }
   }
 //Android//
@@ -17,12 +21,15 @@
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1f7t6Zj");
+    } else if(windowLocation == '/rules'){
+      window.location.replace(currentRulesLink);
     }
   }
 //Other//
   else{
     ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
     var windowLocation = window.location.pathname;
+    // console.log(windowLocation);
   }
 
 
