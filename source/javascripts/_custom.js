@@ -7,7 +7,7 @@
   if(iPadAgent || iPodAgent){
     ga('send', 'event', 'Detection', 'Device', 'iOS');
     var windowLocation = window.location.pathname;
-    if(windowLocation != '/'){
+    if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1h4tYaU");
     }
   }
@@ -15,7 +15,7 @@
   else if(AndroidAgent){
     ga('send', 'event', 'Detection', 'Device', 'Android');
     var windowLocation = window.location.pathname;
-    if(windowLocation != '/'){
+    if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1f7t6Zj");
     }
   }
