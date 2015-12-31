@@ -7,7 +7,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
   var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
 //iOS//
   if(iPadAgent || iPodAgent){
-    ga('send', 'event', 'Detection', 'Device', 'iOS');
+    // ga('send', 'event', 'Detection', 'Device', 'iOS');
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1h4tYaU");
@@ -17,7 +17,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
   }
 //Android//
   else if(AndroidAgent){
-    ga('send', 'event', 'Detection', 'Device', 'Android');
+    // ga('send', 'event', 'Detection', 'Device', 'Android');
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1f7t6Zj");
@@ -27,7 +27,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
   }
 //Other//
   else{
-    ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
+    // ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
     var windowLocation = window.location.pathname;
     // console.log(windowLocation);
   }
@@ -37,16 +37,16 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
 $(function(){
   $('.google a').on('click', function(){
         // console.log('google');
-        var axel = Math.random() + '';
-        var a = axel * 10000000000000;
-        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:o9yxn1kf&fmt=3"/>');
+        // var axel = Math.random() + '';
+        // var a = axel * 10000000000000;
+        // $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio000;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:o9yxn1kf&fmt=3"/>');
   });
 
   $('.apple a').on('click', function(){
         // console.log('apple');
-        var axel = Math.random() + '';
-        var a = axel * 10000000000000;
-        $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:zlthlnwh&fmt=3"/>');
+        // var axel = Math.random() + '';
+        // var a = axel * 10000000000000;
+        // $(this).append('<iframe src="https://4996767.fls.doubleclick.net/activityi;src=4996767;type=ip158907;cat=radio00;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe><img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/conv/?adv=g4lgqpc&ct=0:zlthlnwh&fmt=3"/>');
   });
 });
 
