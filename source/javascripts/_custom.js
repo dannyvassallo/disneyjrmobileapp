@@ -7,27 +7,27 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
   var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
 //iOS//
   if(iPadAgent || iPodAgent){
-    // ga('send', 'event', 'Detection', 'Device', 'iOS');
+    ga('send', 'event', 'Detection', 'Device', 'iOS');
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
-      window.location.replace("http://bit.ly/1h4tYaU");
+      window.location.replace("https://itunes.apple.com/us/app/radio-disney-junior/id1050711248?mt=8");
     } else if(windowLocation == '/rules'){
       window.location.replace(currentRulesLink);
     }
   }
 //Android//
   else if(AndroidAgent){
-    // ga('send', 'event', 'Detection', 'Device', 'Android');
+    ga('send', 'event', 'Detection', 'Device', 'Android');
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
-      window.location.replace("http://bit.ly/1f7t6Zj");
+      // window.location.replace("http://bit.ly/1f7t6Zj");
     } else if(windowLocation == '/rules'){
       window.location.replace(currentRulesLink);
     }
   }
 //Other//
   else{
-    // ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
+    ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
     var windowLocation = window.location.pathname;
     // console.log(windowLocation);
   }
