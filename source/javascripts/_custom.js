@@ -10,9 +10,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorule
     ga('send', 'event', 'Detection', 'Device', 'iOS');
     var windowLocation = window.location.pathname;
     if(windowLocation == '/'){
-      setTimeout(function(){
-        window.open("http://appstore.com/radiodisneyjunior");
-      }, 1000);
+      window.open("http://appstore.com/radiodisneyjunior");
     } else if(windowLocation == '/rules'){
       window.location.replace(currentRulesLink);
     }
